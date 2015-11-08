@@ -17,8 +17,8 @@
 
 (** {1:value_codecs Value codecs}
 
-    Value codec allow to refine JSON value codecs to more appopriate
-    OCaml types and hook into [Jsont]'s error reporting mecanism. This
+    Value codec allow to refine JSON value codecs to more appropriate
+    OCaml types and hook into [Jsont]'s error reporting mechanism. This
     allows, for example, to parse a JSON string value into an URI, a
     JSON object into a record, etc.  *)
 
@@ -35,7 +35,7 @@ type ('a, 'b) value_codec = ('a, 'b) value_decoder * ('b, 'a) value_encoder
 
 type loc = (int * int) * (int * int)
 (** The type for value location ranges. A pair of line and column numbers
-    repsectively one and zero based. *)
+    respectively one and zero based. *)
 
 type +'a def = loc * 'a
 (** The type for values tagged with a location. *)
